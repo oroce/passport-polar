@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+    working_directory: ~/passport-polar
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - source-v1-{{ .Branch }}-{{ .Revision }}
+            - source-v1-{{ .Branch }}-
+            - source-v1-
+
+      - run: npm i
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: source-v1-{{ .Branch }}-{{ .Revision }}
+        
+      - run: npm run lint
+
+      - run: npm test
