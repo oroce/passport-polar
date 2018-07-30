@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/oroce/passpor-polar.git"
+    "url": "git://github.com/oroce/passport-polar.git"
   },
   "bugs": {
     "url": "http://github.com/oroce/passport-polar/issues"
