@@ -1,16 +1,33 @@
 {
   "name": "passport-polar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Passport.js OAuth2 Strategy for Polar",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --require test/bootstrap/node test/*.test.js",
     "test:watch": "npm test -- -w -b",
     "lint": "semistandard"
   },
-  "keywords": ["passportjs", "passport", "oauth", "polar"],
-  "author": "Robert Oroszi <robert@oroszi.net>",
+  "author": {
+    "name": "Robert Oroszi",
+    "email": "robert@oroszi.net",
+    "url": "http://oroszi.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oroce/passpor-polar.git"
+  },
+  "bugs": {
+    "url": "http://github.com/oroce/passport-polar/issues"
+  },
   "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "keywords": ["passportjs", "passport", "oauth", "polar"],
   "dependencies": {
     "debug": "^3.1.0",
     "passport-oauth2": "^1.4.0",
