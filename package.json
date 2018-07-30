@@ -1,6 +1,6 @@
 {
   "name": "passport-polar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Passport.js OAuth2 Strategy for Polar",
   "main": "lib/index.js",
   "scripts": {
@@ -27,7 +27,12 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "keywords": ["passportjs", "passport", "oauth", "polar"],
+  "keywords": [
+    "passportjs",
+    "passport",
+    "oauth",
+    "polar"
+  ],
   "dependencies": {
     "debug": "^3.1.0",
     "passport-oauth2": "^1.4.0",
